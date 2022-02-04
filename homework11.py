@@ -139,24 +139,6 @@ score = cross_val_score(classifier, X, y).mean()
 print(f'Score with the original data set: {score:.2f}')
 
 
-# In[34]:
-
-
-from sklearn.svm import SVC
-from sklearn.model_selection import cross_val_score
-classifier = SVC(gamma=0.005, random_state=42)
-score = cross_val_score(classifier, X, y).mean()
-print(f'Score with the original data set: {score:.2f}')
-
-
-# In[35]:
-
-
-from sklearn.ensemble import RandomForestClassifier
-random_forest = RandomForestClassifier(n_estimators=100, criterion='gini', n_jobs=-1, random_state=42)
-random_forest.fit(X, y)
-
-
 # In[36]:
 
 
